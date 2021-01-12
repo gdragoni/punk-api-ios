@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16125B2A25AD0A75003CFB6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16125B2925AD0A75003CFB6B /* AppDelegate.swift */; };
+		16125B3125AD0A75003CFB6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16125B2F25AD0A75003CFB6B /* Main.storyboard */; };
+		16125B3325AD0A76003CFB6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16125B3225AD0A76003CFB6B /* Assets.xcassets */; };
+		16125B3625AD0A76003CFB6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16125B3425AD0A76003CFB6B /* LaunchScreen.storyboard */; };
+		16125B4925AD0ED1003CFB6B /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16125B4825AD0ED1003CFB6B /* API.swift */; };
+		16125B4C25AD0EEC003CFB6B /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16125B4B25AD0EEC003CFB6B /* Enviroment.swift */; };
+		16125B5225AD10DC003CFB6B /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16125B5125AD10DC003CFB6B /* Network.swift */; };
+		16125B5625AD1200003CFB6B /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16125B5525AD1200003CFB6B /* Beer.swift */; };
+		16125B6525AD15BE003CFB6B /* BeerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16125B6425AD15BE003CFB6B /* BeerListViewController.swift */; };
+		16125B7025AD176B003CFB6B /* BeerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16125B6E25AD176B003CFB6B /* BeerTableViewCell.xib */; };
+		16125B7725AD1BD5003CFB6B /* BeerCellDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16125B7625AD1BD5003CFB6B /* BeerCellDataSource.swift */; };
+		16125B7E25AD1D03003CFB6B /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16125B7D25AD1D03003CFB6B /* BeerTableViewCell.swift */; };
+		16125B8325AD21E5003CFB6B /* BeerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16125B8225AD21E5003CFB6B /* BeerListViewModel.swift */; };
+		16125B8B25AD3AF3003CFB6B /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16125B8A25AD3AF3003CFB6B /* Debouncer.swift */; };
+		16BDF98725AE2A24002E6331 /* UIViewController+EnumSegueProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BDF98625AE2A24002E6331 /* UIViewController+EnumSegueProtocol.swift */; };
+		16BDF98B25AE2A4C002E6331 /* SegueFrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BDF98A25AE2A4C002E6331 /* SegueFrom.swift */; };
+		16BDF98E25AE2ABE002E6331 /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BDF98D25AE2ABE002E6331 /* BeerDetailViewController.swift */; };
+		221F70C0B78DE3272DD80AB0 /* Pods_PunkAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20931A8124F6FA8CD593AB50 /* Pods_PunkAPI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		16125B2625AD0A75003CFB6B /* PunkAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PunkAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16125B2925AD0A75003CFB6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		16125B3025AD0A75003CFB6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		16125B3225AD0A76003CFB6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16125B3525AD0A76003CFB6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		16125B3725AD0A76003CFB6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16125B4825AD0ED1003CFB6B /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		16125B4B25AD0EEC003CFB6B /* Enviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enviroment.swift; sourceTree = "<group>"; };
+		16125B5125AD10DC003CFB6B /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		16125B5525AD1200003CFB6B /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		16125B6425AD15BE003CFB6B /* BeerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewController.swift; sourceTree = "<group>"; };
+		16125B6E25AD176B003CFB6B /* BeerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeerTableViewCell.xib; sourceTree = "<group>"; };
+		16125B7625AD1BD5003CFB6B /* BeerCellDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerCellDataSource.swift; sourceTree = "<group>"; };
+		16125B7D25AD1D03003CFB6B /* BeerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewCell.swift; sourceTree = "<group>"; };
+		16125B8225AD21E5003CFB6B /* BeerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewModel.swift; sourceTree = "<group>"; };
+		16125B8A25AD3AF3003CFB6B /* Debouncer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debouncer.swift; sourceTree = "<group>"; };
+		16BDF98625AE2A24002E6331 /* UIViewController+EnumSegueProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+EnumSegueProtocol.swift"; sourceTree = "<group>"; };
+		16BDF98A25AE2A4C002E6331 /* SegueFrom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueFrom.swift; sourceTree = "<group>"; };
+		16BDF98D25AE2ABE002E6331 /* BeerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
+		1F314A513BECD9DF4EF59DA1 /* Pods-PunkAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PunkAPI.debug.xcconfig"; path = "Target Support Files/Pods-PunkAPI/Pods-PunkAPI.debug.xcconfig"; sourceTree = "<group>"; };
+		20931A8124F6FA8CD593AB50 /* Pods_PunkAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PunkAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F15DFA25003BAB2978A462EF /* Pods-PunkAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PunkAPI.release.xcconfig"; path = "Target Support Files/Pods-PunkAPI/Pods-PunkAPI.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16125B2325AD0A75003CFB6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				221F70C0B78DE3272DD80AB0 /* Pods_PunkAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		065B62890506A912DEFAFF71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F314A513BECD9DF4EF59DA1 /* Pods-PunkAPI.debug.xcconfig */,
+				F15DFA25003BAB2978A462EF /* Pods-PunkAPI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		16125B1D25AD0A75003CFB6B = {
+			isa = PBXGroup;
+			children = (
+				16125B2825AD0A75003CFB6B /* PunkAPI */,
+				16125B2725AD0A75003CFB6B /* Products */,
+				065B62890506A912DEFAFF71 /* Pods */,
+				1B96A371F7C22F36BF8A60A2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		16125B2725AD0A75003CFB6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16125B2625AD0A75003CFB6B /* PunkAPI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16125B2825AD0A75003CFB6B /* PunkAPI */ = {
+			isa = PBXGroup;
+			children = (
+				16125B2925AD0A75003CFB6B /* AppDelegate.swift */,
+				16125B4425AD0E54003CFB6B /* Commom */,
+				16125B5425AD11E0003CFB6B /* Entities */,
+				16BDF98525AE29BC002E6331 /* Extensions */,
+				16125B5025AD10C7003CFB6B /* Network */,
+				16125B4525AD0E5B003CFB6B /* Resources */,
+				16125B6025AD1415003CFB6B /* Scenes */,
+				16125B8925AD3ADF003CFB6B /* Tools */,
+				16125B4725AD0EB3003CFB6B /* View */,
+			);
+			path = PunkAPI;
+			sourceTree = "<group>";
+		};
+		16125B4425AD0E54003CFB6B /* Commom */ = {
+			isa = PBXGroup;
+			children = (
+				16125B4825AD0ED1003CFB6B /* API.swift */,
+				16125B4B25AD0EEC003CFB6B /* Enviroment.swift */,
+			);
+			path = Commom;
+			sourceTree = "<group>";
+		};
+		16125B4525AD0E5B003CFB6B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				16125B3225AD0A76003CFB6B /* Assets.xcassets */,
+				16125B3725AD0A76003CFB6B /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		16125B4725AD0EB3003CFB6B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				16125B6825AD170E003CFB6B /* BeerCell */,
+				16BDF98A25AE2A4C002E6331 /* SegueFrom.swift */,
+				16125B2F25AD0A75003CFB6B /* Main.storyboard */,
+				16125B3425AD0A76003CFB6B /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		16125B5025AD10C7003CFB6B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				16125B5125AD10DC003CFB6B /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		16125B5425AD11E0003CFB6B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				16125B5525AD1200003CFB6B /* Beer.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		16125B6025AD1415003CFB6B /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				16125B6225AD1552003CFB6B /* BeerList */,
+				16125B6325AD1559003CFB6B /* BeerDetail */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		16125B6225AD1552003CFB6B /* BeerList */ = {
+			isa = PBXGroup;
+			children = (
+				16125B6425AD15BE003CFB6B /* BeerListViewController.swift */,
+				16125B8225AD21E5003CFB6B /* BeerListViewModel.swift */,
+			);
+			path = BeerList;
+			sourceTree = "<group>";
+		};
+		16125B6325AD1559003CFB6B /* BeerDetail */ = {
+			isa = PBXGroup;
+			children = (
+				16BDF98D25AE2ABE002E6331 /* BeerDetailViewController.swift */,
+			);
+			path = BeerDetail;
+			sourceTree = "<group>";
+		};
+		16125B6825AD170E003CFB6B /* BeerCell */ = {
+			isa = PBXGroup;
+			children = (
+				16125B7D25AD1D03003CFB6B /* BeerTableViewCell.swift */,
+				16125B6E25AD176B003CFB6B /* BeerTableViewCell.xib */,
+				16125B7625AD1BD5003CFB6B /* BeerCellDataSource.swift */,
+			);
+			path = BeerCell;
+			sourceTree = "<group>";
+		};
+		16125B8925AD3ADF003CFB6B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				16125B8A25AD3AF3003CFB6B /* Debouncer.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		16BDF98525AE29BC002E6331 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				16BDF98625AE2A24002E6331 /* UIViewController+EnumSegueProtocol.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1B96A371F7C22F36BF8A60A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20931A8124F6FA8CD593AB50 /* Pods_PunkAPI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16125B2525AD0A75003CFB6B /* PunkAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16125B3A25AD0A76003CFB6B /* Build configuration list for PBXNativeTarget "PunkAPI" */;
+			buildPhases = (
+				52EDB665519C07120697E86D /* [CP] Check Pods Manifest.lock */,
+				16125B2225AD0A75003CFB6B /* Sources */,
+				16125B2325AD0A75003CFB6B /* Frameworks */,
+				16125B2425AD0A75003CFB6B /* Resources */,
+				5DD34A3109EF0B96823588BC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PunkAPI;
+			productName = PunkAPI;
+			productReference = 16125B2625AD0A75003CFB6B /* PunkAPI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16125B1E25AD0A75003CFB6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					16125B2525AD0A75003CFB6B = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 16125B2125AD0A75003CFB6B /* Build configuration list for PBXProject "PunkAPI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 16125B1D25AD0A75003CFB6B;
+			productRefGroup = 16125B2725AD0A75003CFB6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16125B2525AD0A75003CFB6B /* PunkAPI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16125B2425AD0A75003CFB6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16125B3625AD0A76003CFB6B /* LaunchScreen.storyboard in Resources */,
+				16125B3325AD0A76003CFB6B /* Assets.xcassets in Resources */,
+				16125B3125AD0A75003CFB6B /* Main.storyboard in Resources */,
+				16125B7025AD176B003CFB6B /* BeerTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		52EDB665519C07120697E86D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PunkAPI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DD34A3109EF0B96823588BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PunkAPI/Pods-PunkAPI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PunkAPI/Pods-PunkAPI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PunkAPI/Pods-PunkAPI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16125B2225AD0A75003CFB6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16BDF98725AE2A24002E6331 /* UIViewController+EnumSegueProtocol.swift in Sources */,
+				16125B6525AD15BE003CFB6B /* BeerListViewController.swift in Sources */,
+				16125B7E25AD1D03003CFB6B /* BeerTableViewCell.swift in Sources */,
+				16125B5225AD10DC003CFB6B /* Network.swift in Sources */,
+				16125B8B25AD3AF3003CFB6B /* Debouncer.swift in Sources */,
+				16125B5625AD1200003CFB6B /* Beer.swift in Sources */,
+				16125B8325AD21E5003CFB6B /* BeerListViewModel.swift in Sources */,
+				16BDF98B25AE2A4C002E6331 /* SegueFrom.swift in Sources */,
+				16125B4925AD0ED1003CFB6B /* API.swift in Sources */,
+				16125B4C25AD0EEC003CFB6B /* Enviroment.swift in Sources */,
+				16125B7725AD1BD5003CFB6B /* BeerCellDataSource.swift in Sources */,
+				16125B2A25AD0A75003CFB6B /* AppDelegate.swift in Sources */,
+				16BDF98E25AE2ABE002E6331 /* BeerDetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		16125B2F25AD0A75003CFB6B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16125B3025AD0A75003CFB6B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		16125B3425AD0A76003CFB6B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16125B3525AD0A76003CFB6B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		16125B3825AD0A76003CFB6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		16125B3925AD0A76003CFB6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16125B3B25AD0A76003CFB6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F314A513BECD9DF4EF59DA1 /* Pods-PunkAPI.debug.xcconfig */;
+			buildSettings = {
+				API_BASE_URL = "https://api.punkapi.com/v2/";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6E4B3G6QQL;
+				INFOPLIST_FILE = PunkAPI/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dragoni.PunkAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		16125B3C25AD0A76003CFB6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F15DFA25003BAB2978A462EF /* Pods-PunkAPI.release.xcconfig */;
+			buildSettings = {
+				API_BASE_URL = "https://api.punkapi.com/v2/";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6E4B3G6QQL;
+				INFOPLIST_FILE = PunkAPI/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dragoni.PunkAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16125B2125AD0A75003CFB6B /* Build configuration list for PBXProject "PunkAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16125B3825AD0A76003CFB6B /* Debug */,
+				16125B3925AD0A76003CFB6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16125B3A25AD0A76003CFB6B /* Build configuration list for PBXNativeTarget "PunkAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16125B3B25AD0A76003CFB6B /* Debug */,
+				16125B3C25AD0A76003CFB6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16125B1E25AD0A75003CFB6B /* Project object */;
+}
