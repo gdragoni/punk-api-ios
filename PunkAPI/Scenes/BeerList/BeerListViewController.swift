@@ -20,6 +20,16 @@ class BeerListViewController: UIViewController {
         viewModel.loadBeers()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+    
     func setupTableView() {
         let cellIdentifier = "BeerTableViewCell"
         tableView.register(UINib(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
@@ -27,7 +37,7 @@ class BeerListViewController: UIViewController {
             cell.titleLbl.text = beer.name
             cell.abvLbl.text = String(format: "Teor alcoólico %.1f%% vol.", beer.abv ?? 0)
             if let imgURLString = beer.imageURL,
-            let url = URL(string: imgURLString) {
+               let url = URL(string: imgURLString) {
                 cell.imgView.af.setImage(withURL: url, cacheKey: beer.imageURL ?? "", imageTransition: .crossDissolve(1), runImageTransitionIfCached: false)
             } else {
                 cell.imgView = nil
@@ -57,6 +67,13 @@ class BeerListViewController: UIViewController {
             }
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destinationViewController = segue.destination as? BeerDetailViewController,
+           let beerModel = sender as? Beer {
+            destinationViewController.beer = beerModel
+        }
+    }
 }
 
 extension BeerListViewController: UITableViewDelegate {
@@ -64,7 +81,7 @@ extension BeerListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.cellForRow(at: indexPath)?.setSelected(false, animated: true)
         guard indexPath.row < dataSource.countItems else { return }
-        print(dataSource.item(for: indexPath))
+        performSegue(withIdentifier: SegueFrom.beerList.toDetail, sender: dataSource.item(for: indexPath))
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
