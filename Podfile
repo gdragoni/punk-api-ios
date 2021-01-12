@@ -6,5 +6,7 @@ target 'PunkAPI' do
   use_frameworks!
 
   # Pods for PunkAPI
+  pod 'Alamofire', '~> 5.1'
+  pod 'AlamofireImage', '~> 4.1'
 
 end
