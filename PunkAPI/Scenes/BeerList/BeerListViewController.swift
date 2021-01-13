@@ -40,7 +40,7 @@ class BeerListViewController: UIViewController {
                let url = URL(string: imgURLString) {
                 cell.imgView.af.setImage(withURL: url, cacheKey: beer.imageURL ?? "", imageTransition: .crossDissolve(1), runImageTransitionIfCached: false)
             } else {
-                cell.imgView = nil
+                cell.imgView.image = nil
             }
         })
         
