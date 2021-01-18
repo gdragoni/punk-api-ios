@@ -35,7 +35,7 @@ class BeerListViewController: UIViewController {
         tableView.register(UINib(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
         self.dataSource = BeerCellDataSource(cellIdentifier: cellIdentifier, configureCell: { cell, beer in
             cell.titleLbl.text = beer.name
-            cell.abvLbl.text = String(format: "Teor alcoólico %.1f%% vol.", beer.abv ?? 0)
+            cell.abvLbl.text = beer.abvString
             if let imgURLString = beer.imageURL,
                let url = URL(string: imgURLString) {
                 cell.imgView.af.setImage(withURL: url, cacheKey: beer.imageURL ?? "", imageTransition: .crossDissolve(1), runImageTransitionIfCached: false)

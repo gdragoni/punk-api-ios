@@ -19,4 +19,7 @@ struct Beer: Codable {
         case imageURL = "image_url"
         case abv, ibu
     }
+    
+    var abvString: String { String(format: "Teor alcoólico %.1f%% vol.", abv ?? 0) }
+    var ibuString: String { String(format: "Escala de amargor %.1f", ibu ?? 0) }
 }
