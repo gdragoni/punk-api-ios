@@ -27,8 +27,8 @@ class BeerDetailViewController: UIViewController {
         guard let beer = self.beer else { return }
         title = beer.name
         taglineLbl.text = beer.tagline
-        abvLbl.text = String(format: "Teor alcoólico %.1f%% vol.", beer.abv ?? 0)
-        ibuLbl.text = String(format: "Escala de amargor %.1f", beer.ibu ?? 0)
+        abvLbl.text = beer.abvString
+        ibuLbl.text = beer.ibuString
         descriptionLbl.text = beer.beerDescription
         
         if let urlString = beer.imageURL,
